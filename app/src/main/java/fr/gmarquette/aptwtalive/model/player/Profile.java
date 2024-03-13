@@ -1,9 +1,15 @@
 package fr.gmarquette.aptwtalive.model.player;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.Date;
 
+@Entity
 public class Profile
 {
+    @PrimaryKey(autoGenerate = true)
+    public int id;
     public String name;
     public String firstName;
     public int profilePicture;
